@@ -1,1 +1,2 @@
-# PO_DanielKucharski
+# Programowanie Obiektowa
+Daniel Kucharski 156038
