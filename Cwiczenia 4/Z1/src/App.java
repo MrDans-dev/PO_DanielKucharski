@@ -42,7 +42,7 @@ public class App {
             else
                 buffer.append(Character.toUpperCase(str.charAt(i)));
         }
-        return buffer.toString();
+        return buffer;
     }
 
     public static String nice(String str)
