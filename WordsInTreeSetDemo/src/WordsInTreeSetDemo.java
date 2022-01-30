@@ -1,4 +1,3 @@
-package com.company;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -8,8 +7,7 @@ public class WordsInTreeSetDemo
     public static void main(String[] args) throws FileNotFoundException {
         Set<String> words = new TreeSet<String>();
         long totalTime = 0;
-
-        File file = new File("..\\alice30.txt");
+        File file = new File("./src/alice30.txt");
         Scanner in = new Scanner(file);
         while (in.hasNext()) {
             String word = in.next();
@@ -26,7 +24,7 @@ public class WordsInTreeSetDemo
 
         System.out.println(". . .");
         System.out.println(words.size() + " unikalnych słów. " + totalTime + " milisekund.");
-        // 5908 unikalnych slow. 32 milisekund / 28 milisekund / 21 milisekund
+        // 5908 unikalnych slow. 22 milisekund / 15 milisekund / 14 milisekund
     }
 }
 

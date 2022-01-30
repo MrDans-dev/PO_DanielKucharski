@@ -1,4 +1,3 @@
-package com.company;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -8,8 +7,7 @@ public class WordsInHashSetDemo
     public static void main(String[] args) throws FileNotFoundException {
         Set<String> words = new HashSet<String>();
         long totalTime = 0;
-
-        File file = new File("..\\alice30.txt");
+        File file = new File("./src/alice30.txt");
         Scanner in = new Scanner(file);
         while (in.hasNext()) {
             String word = in.next();
@@ -26,7 +24,7 @@ public class WordsInHashSetDemo
 
         System.out.println(". . .");
         System.out.println(words.size() + " unikalnych słów. " + totalTime + " milisekund.");
-        // 5908 unikalnych slow. 10 milisekund / 7 milisekund / 6 milisekund
+        // 5908 unikalnych slow. 7 milisekund / 5 milisekund / 2 milisekund
     }
 }
 
